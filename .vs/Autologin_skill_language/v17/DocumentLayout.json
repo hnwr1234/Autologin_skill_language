@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Raphael Wong\\070425Autologin_skill_language\\Autologin_skill_language\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8848CFFD-7BCD-4F2C-AE8A-72927ED93D51}|Autologin_skill_language\\Autologin_skill_language.csproj|c:\\users\\raphael wong\\070425autologin_skill_language\\autologin_skill_language\\autologin_skill_language\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8848CFFD-7BCD-4F2C-AE8A-72927ED93D51}|Autologin_skill_language\\Autologin_skill_language.csproj|solutionrelative:autologin_skill_language\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8848CFFD-7BCD-4F2C-AE8A-72927ED93D51}|Autologin_skill_language\\Autologin_skill_language.csproj|c:\\users\\raphael wong\\070425autologin_skill_language\\autologin_skill_language\\autologin_skill_language\\pages\\profilepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8848CFFD-7BCD-4F2C-AE8A-72927ED93D51}|Autologin_skill_language\\Autologin_skill_language.csproj|solutionrelative:autologin_skill_language\\pages\\profilepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8848CFFD-7BCD-4F2C-AE8A-72927ED93D51}|Autologin_skill_language\\Autologin_skill_language.csproj|c:\\users\\raphael wong\\070425autologin_skill_language\\autologin_skill_language\\autologin_skill_language\\pages\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8848CFFD-7BCD-4F2C-AE8A-72927ED93D51}|Autologin_skill_language\\Autologin_skill_language.csproj|solutionrelative:autologin_skill_language\\pages\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8848CFFD-7BCD-4F2C-AE8A-72927ED93D51}|Autologin_skill_language\\Autologin_skill_language.csproj|c:\\users\\raphael wong\\070425autologin_skill_language\\autologin_skill_language\\autologin_skill_language\\pages\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8848CFFD-7BCD-4F2C-AE8A-72927ED93D51}|Autologin_skill_language\\Autologin_skill_language.csproj|solutionrelative:autologin_skill_language\\pages\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProfilePage.cs",
+              "DocumentMoniker": "C:\\Users\\Raphael Wong\\070425Autologin_skill_language\\Autologin_skill_language\\Autologin_skill_language\\Pages\\ProfilePage.cs",
+              "RelativeDocumentMoniker": "Autologin_skill_language\\Pages\\ProfilePage.cs",
+              "ToolTip": "C:\\Users\\Raphael Wong\\070425Autologin_skill_language\\Autologin_skill_language\\Autologin_skill_language\\Pages\\ProfilePage.cs",
+              "RelativeToolTip": "Autologin_skill_language\\Pages\\ProfilePage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T02:59:23.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Raphael Wong\\070425Autologin_skill_language\\Autologin_skill_language\\Autologin_skill_language\\Program.cs",
+              "RelativeDocumentMoniker": "Autologin_skill_language\\Program.cs",
+              "ToolTip": "C:\\Users\\Raphael Wong\\070425Autologin_skill_language\\Autologin_skill_language\\Autologin_skill_language\\Program.cs",
+              "RelativeToolTip": "Autologin_skill_language\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T02:54:58.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginPage.cs",
+              "DocumentMoniker": "C:\\Users\\Raphael Wong\\070425Autologin_skill_language\\Autologin_skill_language\\Autologin_skill_language\\Pages\\LoginPage.cs",
+              "RelativeDocumentMoniker": "Autologin_skill_language\\Pages\\LoginPage.cs",
+              "ToolTip": "C:\\Users\\Raphael Wong\\070425Autologin_skill_language\\Autologin_skill_language\\Autologin_skill_language\\Pages\\LoginPage.cs",
+              "RelativeToolTip": "Autologin_skill_language\\Pages\\LoginPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T02:54:27.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomePage.cs",
+              "DocumentMoniker": "C:\\Users\\Raphael Wong\\070425Autologin_skill_language\\Autologin_skill_language\\Autologin_skill_language\\Pages\\HomePage.cs",
+              "RelativeDocumentMoniker": "Autologin_skill_language\\Pages\\HomePage.cs",
+              "ToolTip": "C:\\Users\\Raphael Wong\\070425Autologin_skill_language\\Autologin_skill_language\\Autologin_skill_language\\Pages\\HomePage.cs",
+              "RelativeToolTip": "Autologin_skill_language\\Pages\\HomePage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T02:52:11.888Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
