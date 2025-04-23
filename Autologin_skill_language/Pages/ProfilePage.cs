@@ -1,5 +1,8 @@
-﻿using OpenQA.Selenium.Support.UI;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
+using System;
+using System.Collections.Generic;
+using System.Threading;
+
 namespace Autologin_skill_language.Pages
 {
     public class ProfilePage
@@ -13,18 +16,59 @@ namespace Autologin_skill_language.Pages
 
         public void NavigateToProfile()
         {
-            _driver.Navigate().GoToUrl("http://localhost:5003/Account/Profile");
-            Thread.Sleep(2000); // Optional wait
+            _driver.FindElement(By.XPath("//a[contains(text(),'Profile')]"))?.Click();
+            Thread.Sleep(2000); // Wait for profile page to load
+        }
+
+        public void AddLanguages(List<(string Name, string Level)> languages)
+        {
+            foreach (var (name, level) in languages)
+            {
+                _driver.FindElement(By.XPath("//button[contains(text(),'Add New Language')]"))?.Click();
+                Thread.Sleep(1000);
+
+                var languageInput = _driver.FindElement(By.Name("name"));
+                languageInput.Clear();
+                languageInput.SendKeys(name);
+
+                var levelDropdown = _driver.FindElement(By.Name("level"));
+                levelDropdown.Click();
+                Thread.Sleep(500);
+                levelDropdown.FindElement(By.XPath($"//option[text()='{level}']"))?.Click();
+
+                _driver.FindElement(By.XPath("//input[@value='Add']"))?.Click();
+                Thread.Sleep(1000);
+            }
+        }
+
+        public void SwitchToSkillsTab()
+        {
+            _driver.FindElement(By.XPath("//a[contains(text(),'Skills')]"))?.Click();
+            Thread.Sleep(1000);
+        }
+
+        public void AddSkills(List<(string Name, string Level)> skills)
+        {
+            foreach (var (name, level) in skills)
+            {
+                _driver.FindElement(By.XPath("//button[contains(text(),'Add New Skill')]"))?.Click();
+                Thread.Sleep(1000);
+
+                var skillInput = _driver.FindElement(By.Name("name"));
+                skillInput.Clear();
+                skillInput.SendKeys(name);
+
+                var levelDropdown = _driver.FindElement(By.Name("level"));
+                levelDropdown.Click();
+                Thread.Sleep(500);
+                levelDropdown.FindElement(By.XPath($"//option[text()='{level}']"))?.Click();
+
+                _driver.FindElement(By.XPath("//input[@value='Add']"))?.Click();
+                Thread.Sleep(1000);
+            }
         }
 
         public void AddLanguagesAndSkills()
-        {
-            AddLanguages();
-            SwitchToSkillsTab();
-            AddSkills();
-        }
-
-        private void AddLanguages()
         {
             var languages = new List<(string Name, string Level)>
             {
@@ -33,31 +77,10 @@ namespace Autologin_skill_language.Pages
                 ("Cantonese", "Native/Bilingual"),
                 ("Japanese", "Fluent")
             };
+            AddLanguages(languages);
 
-            foreach (var (name, level) in languages)
-            {
-                AddLanguage(name, level);
-                Thread.Sleep(1000); // Optional delay
-            }
-        }
+            SwitchToSkillsTab();
 
-        private void AddLanguage(string languageName, string languageLevel)
-        {
-            _driver.FindElement(By.XPath("//div[@data-tab='first']//table//div[text()='Add New']")).Click();
-            _driver.FindElement(By.XPath("//input[@placeholder='Add Language']")).SendKeys(languageName);
-            var dropdown = new SelectElement(_driver.FindElement(By.Name("level")));
-            dropdown.SelectByText(languageLevel);
-            _driver.FindElement(By.XPath("//input[@value='Add']")).Click();
-        }
-
-        private void SwitchToSkillsTab()
-        {
-            _driver.FindElement(By.XPath("//a[text()='Skills']")).Click();
-            Thread.Sleep(2000); // Optional wait
-        }
-
-        private void AddSkills()
-        {
             var skills = new List<(string Name, string Level)>
             {
                 ("Python", "Beginner"),
@@ -66,24 +89,7 @@ namespace Autologin_skill_language.Pages
                 ("HTML", "Beginner"),
                 ("CSS", "Beginner")
             };
-
-            foreach (var (name, level) in skills)
-            {
-                AddSkill(name, level);
-                Thread.Sleep(1000); // Optional delay
-            }
-        }
-
-        private void AddSkill(string skillName, string skillLevel)
-        {
-            _driver.FindElement(By.XPath("//div[@data-tab='second']//table//div[text()='Add New']")).Click();
-            _driver.FindElement(By.XPath("//input[@placeholder='Add Skill']")).SendKeys(skillName);
-            var dropdown = new SelectElement(_driver.FindElement(By.Name("level")));
-            dropdown.SelectByText(skillLevel);
-            _driver.FindElement(By.XPath("//input[@value='Add']")).Click();
+            AddSkills(skills);
         }
     }
 }
-
-
-

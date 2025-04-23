@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Reqnroll;
+using Autologin_skill_language.Drivers;
 
-namespace Autologin_skill_language.Hooks
+[Binding]
+public class Hooks
 {
-    class Hook
+    [BeforeScenario]
+    public void BeforeScenario()
     {
+        CommonDriver.StartBrowser();
+    }
+
+    [AfterScenario]
+    public void AfterScenario()
+    {
+        CommonDriver.CloseBrowser();
     }
 }

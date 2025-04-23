@@ -1,9 +1,6 @@
-﻿Feature: Feature1
+﻿Feature: Home Page Access http://localhost:5003/Home
 
-A short summary of the feature
-
-@tag1
-Scenario: [scenario name]
-	Given [context]
-	When [action]
-	Then [outcome]
+  Scenario: Valid user logs into the home page http://localhost:5003/Home
+    Given the user launches the application
+    When the user logs in with valid credentials
+    Then the home page is displayed

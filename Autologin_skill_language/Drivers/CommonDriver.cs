@@ -14,7 +14,7 @@ namespace Autologin_skill_language.Drivers
             {
                 ChromeOptions options = new ChromeOptions();
 
-                // Recommended browser options
+                // Recommended browser options for automation
                 options.AddUserProfilePreference("credentials_enable_service", false);
                 options.AddUserProfilePreference("profile.password_manager_enabled", false);
                 options.AddExcludedArgument("enable-automation");
@@ -29,7 +29,7 @@ namespace Autologin_skill_language.Drivers
                 try
                 {
                     driver = new ChromeDriver(options);
-                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10); // Optional implicit wait
+                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
                     driver.Manage().Window.Maximize();
                 }
                 catch (WebDriverException ex)
@@ -38,6 +38,14 @@ namespace Autologin_skill_language.Drivers
                     throw;
                 }
             }
+        }
+
+        public static IWebDriver GetDriver()
+        {
+            if (driver == null)
+                throw new InvalidOperationException("Driver not initialized. Call StartBrowser() first.");
+
+            return driver;
         }
 
         public static void CloseBrowser()
@@ -57,4 +65,3 @@ namespace Autologin_skill_language.Drivers
         }
     }
 }
-

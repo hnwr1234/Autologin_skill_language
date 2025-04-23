@@ -13,6 +13,12 @@ namespace Autologin_skill_language.Pages
             this.driver = driver;
         }
 
+        // NEW: Navigate to Login Page
+        public void NavigateToLoginPage()
+        {
+            driver.Navigate().GoToUrl("http://localhost:5003/login");  // Adjust URL as needed
+        }
+
         // Locators
         private By signInButton => By.LinkText("Sign In");
         private By emailField => By.XPath("/html/body/div[2]/div/div/div[1]/div/div[1]/input");

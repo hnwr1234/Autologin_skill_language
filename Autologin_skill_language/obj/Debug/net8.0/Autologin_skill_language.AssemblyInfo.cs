@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Autologin_skill_language")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dcb6d77a0d4539db7ea388abe43b2f47b67fc9ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("Autologin_skill_language")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Autologin_skill_language")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
