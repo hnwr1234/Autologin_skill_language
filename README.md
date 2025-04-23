@@ -49,4 +49,63 @@ Folders - Drivers - CommonDriver.cs
 
                      Program.cs
 
+Instructions for Running the Tests
+>>>>Prerequisites
+.NET 8.0 SDK installed
 
+Chrome browser installed (for Selenium WebDriver)
+
+Visual Studio 2022
+
+ChromeDriver is included via NuGet (Selenium.WebDriver.ChromeDriver)
+
+
+>>>Restore Dependencies
+Run this command to install all required NuGet packages:
+
+dotnet restore
+
+>>>>Run Tests from the Command Line
+
+dotnet test
+
+This will build your project and run all the feature files using Reqnroll + NUnit.
+
+Run Tests from Visual Studio
+>>>>Open the solution in Visual Studio.
+
+Build the solution.
+
+Open the Test Explorer window.
+
+Click Run All or right-click any test and select Run.
+
+
+>>>>> NuGet Packages Used
+Below is the full list of packages defined in your .csproj for browser automation and BDD testing:
+
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core" Version="4.14.1" />
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+    <PackageReference Include="NUnit" Version="4.3.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="5.0.0" />
+    <PackageReference Include="Reqnroll" Version="2.4.0" />
+    <PackageReference Include="Reqnroll.NUnit" Version="2.4.0" />
+    <PackageReference Include="Reqnroll.Tools.MsBuild.Generation" Version="2.4.0" />
+    <PackageReference Include="Selenium.Support" Version="4.31.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.31.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="135.0.7049.8400" />
+  </ItemGroup>
+
+</Project>
