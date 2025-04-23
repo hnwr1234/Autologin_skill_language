@@ -49,41 +49,8 @@ Folders - Drivers - CommonDriver.cs
 
                      Program.cs
 
-Instructions for Running the Tests
->>>>Prerequisites
-.NET 8.0 SDK installed
-
-Chrome browser installed (for Selenium WebDriver)
-
-Visual Studio 2022
-
-ChromeDriver is included via NuGet (Selenium.WebDriver.ChromeDriver)
-
-
->>>Restore Dependencies
-Run this command to install all required NuGet packages:
-
-dotnet restore
-
->>>>Run Tests from the Command Line
-
-dotnet test
-
-This will build your project and run all the feature files using Reqnroll + NUnit.
-
-Run Tests from Visual Studio
->>>>Open the solution in Visual Studio.
-
-Build the solution.
-
-Open the Test Explorer window.
-
-Click Run All or right-click any test and select Run.
-
-
->>>>> NuGet Packages Used
+NuGet Packages Used:
 Below is the full list of packages defined in your .csproj for browser automation and BDD testing:
-
 
 <Project Sdk="Microsoft.NET.Sdk">
 
@@ -109,3 +76,4 @@ Below is the full list of packages defined in your .csproj for browser automatio
   </ItemGroup>
 
 </Project>
+
