@@ -48,3 +48,14 @@ Folders - Drivers - CommonDriver.cs
                     -ProfileStep.cs
 
                      Program.cs
+
+>>>>Run Tests in Visual Studio
+Open the .sln file.
+
+Build the solution.
+
+Open Test Explorer.
+
+Click Run All.
+
+
